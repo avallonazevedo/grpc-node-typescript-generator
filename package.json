@@ -6,7 +6,11 @@
   "module": "dist/grpc-node-typescript-generator.esm.js",
   "typings": "dist/index.d.ts",
   "license": "MIT",
-  "files": ["dist", "src"],
+  "files": ["dist"],
+  "bin": "./dist/index.js",
+  "bugs": {
+    "url": "https://github.com/avallonazevedo/grpc-node-typescript-generator/issues"
+  },
   "engines": {
     "node": ">=10"
   },
