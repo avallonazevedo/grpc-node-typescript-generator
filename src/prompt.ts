@@ -11,14 +11,16 @@ const askForInformation = (): AskForInformationResponse => {
       type: 'input',
       message:
         'Please provide the directory where your proto files are located:',
-      validate: input => (input.length ? true : 'Please provide a valid path'),
+      validate: (input): boolean | string =>
+        input.length ? true : 'Please provide a valid path',
     },
     {
       name: 'modelsPath',
       type: 'input',
       message:
         'Please provide the directory where your gRPC models must be generated:',
-      validate: input => (input.length ? true : 'Please provide a valid path'),
+      validate: (input): boolean | string =>
+        input.length ? true : 'Please provide a valid path',
     },
   ];
   const response = inquirer.prompt(questions) as unknown;
