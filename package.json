@@ -20,12 +20,6 @@
     "analyze": "size-limit --why"
   },
   "peerDependencies": {},
-  "prettier": {
-    "printWidth": 80,
-    "semi": true,
-    "singleQuote": true,
-    "trailingComma": "es5"
-  },
   "name": "grpc-node-typescript-generator",
   "author": "Avallon Azevedo",
   "module": "dist/grpc-node-typescript-generator.esm.js",
@@ -41,6 +35,10 @@
   ],
   "devDependencies": {
     "@size-limit/preset-small-lib": "^4.9.1",
+    "@types/chalk": "^2.2.0",
+    "@types/inquirer": "^7.3.1",
+    "@types/rimraf": "^3.0.0",
+    "@types/shelljs": "^0.8.8",
     "commitizen": "^4.2.2",
     "commitlint": "^11.0.0",
     "cz-conventional-changelog": "3.3.0",
@@ -54,5 +52,14 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "grpc-tools": "^1.10.0",
+    "grpc_tools_node_protoc_ts": "^5.1.0",
+    "inquirer": "^7.3.3",
+    "remove": "^0.1.5",
+    "rimraf": "^3.0.2",
+    "shelljs": "^0.8.4"
   }
 }
