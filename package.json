@@ -1,12 +1,12 @@
 {
-  "version": "0.1.0",
-  "license": "MIT",
+  "name": "grpc-node-typescript-generator",
+  "version": "1.0.0",
+  "author": "Avallon Azevedo",
   "main": "dist/index.js",
+  "module": "dist/grpc-node-typescript-generator.esm.js",
   "typings": "dist/index.d.ts",
-  "files": [
-    "dist",
-    "src"
-  ],
+  "license": "MIT",
+  "files": ["dist", "src"],
   "engines": {
     "node": ">=10"
   },
@@ -19,20 +19,14 @@
     "size": "size-limit",
     "analyze": "size-limit --why"
   },
-  "peerDependencies": {},
-  "name": "grpc-node-typescript-generator",
-  "author": "Avallon Azevedo",
-  "module": "dist/grpc-node-typescript-generator.esm.js",
-  "size-limit": [
-    {
-      "path": "dist/grpc-node-typescript-generator.cjs.production.min.js",
-      "limit": "10 KB"
-    },
-    {
-      "path": "dist/grpc-node-typescript-generator.esm.js",
-      "limit": "10 KB"
-    }
-  ],
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "grpc-tools": "^1.10.0",
+    "grpc_tools_node_protoc_ts": "^5.1.0",
+    "inquirer": "^7.3.3",
+    "rimraf": "^3.0.2",
+    "shelljs": "^0.8.4"
+  },
   "devDependencies": {
     "@size-limit/preset-small-lib": "^4.9.1",
     "@types/chalk": "^2.2.0",
@@ -48,18 +42,19 @@
     "tslib": "^2.1.0",
     "typescript": "^4.1.3"
   },
+  "size-limit": [
+    {
+      "path": "dist/grpc-node-typescript-generator.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/grpc-node-typescript-generator.esm.js",
+      "limit": "10 KB"
+    }
+  ],
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  },
-  "dependencies": {
-    "chalk": "^4.1.0",
-    "grpc-tools": "^1.10.0",
-    "grpc_tools_node_protoc_ts": "^5.1.0",
-    "inquirer": "^7.3.3",
-    "remove": "^0.1.5",
-    "rimraf": "^3.0.2",
-    "shelljs": "^0.8.4"
   }
 }

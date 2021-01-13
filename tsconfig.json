@@ -1,5 +1,6 @@
 {
-  "include": ["src", "types"],
+  "include": ["src/*.ts", "types"],
+  "exclude": ["src/sample"],
   "compilerOptions": {
     "module": "esnext",
     "rootDir": "./src",
