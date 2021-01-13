@@ -8,6 +8,7 @@
   "license": "MIT",
   "files": ["dist"],
   "bin": "./dist/index.js",
+  "keywords": ["grpc", "typescript", "models", "automation", "proto", "protobuf"],
   "homepage": "https://github.com/avallonazevedo/grpc-node-typescript-generator#readme",
   "bugs": {
     "url": "https://github.com/avallonazevedo/grpc-node-typescript-generator/issues"
